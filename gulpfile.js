@@ -6,7 +6,7 @@ var browserSync = require('browser-sync').create();
 
 var config = {
   source: './src/',
-  dist: './public'
+  dist: './public/'
 };
 var paths = {
   assets: "/assets/",
@@ -67,5 +67,5 @@ gulp.task("serve", () => {
   });
   gulp.watch(sources.html, ["html-watch"]);
   gulp.watch(sources.sass, ["sass-watch"]);
-  gulp.watch(sources.js, ["js-watch"]); 
+  gulp.watch(sources.js, ["js-watch"]);
 });
